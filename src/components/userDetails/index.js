@@ -11,6 +11,8 @@ const UserDetails = (props) => {
     fetchUsers();
   }, [fetchUsers]);
 
+  {/* here the userDetails state contains {users, error, loading} => properties */}
+
   return (
     <div className="container">
       {userDetails.users.map((eachUser) => (
